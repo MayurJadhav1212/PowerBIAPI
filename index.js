@@ -27,8 +27,8 @@ app.get('/', async (req, res) => {
 
 // Start server
 const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`API running at http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`API running at http://0.0.0.0:${PORT}`);
 });
 
 
